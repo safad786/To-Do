@@ -1,0 +1,121 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.notebook {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Increased width */
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, white 20px, #f7f7f7 20px, #f7f7f7 21px, white 21px);
+    background-size: 100% 30px;
+    border: 1px solid #ccc;
+}
+
+.notebook:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-left: 3px solid red;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 24px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 16px; /* Adjusted font size */
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 0;
+    outline: none;
+    font-size: 16px; /* Adjusted font size */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #00bfff;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size */
+}
+
+button:hover {
+    background-color: #1e90ff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cccccc;
+    position: relative;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4500;
+    font-size: 16px;
+}
+
+.target-date {
+    font-size: 14px; /* Adjusted font size */
+    color: #888888;
+    margin-left: 10px;
+}
+
+.timer {
+    font-size: 14px; /* Adjusted font size */
+    color: #ff4500;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
